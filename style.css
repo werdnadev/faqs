@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
+body{
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  background-color: hsl(275, 100%, 97%);
+  font-family: 'Work Sans';
+}
+.main-container{
+  padding:10px;
+  background-color: white;
+  height: fit-content;
+  border-radius:10px;
+}
+
+.top{
+  margin-top:20px;
+  display: flex;
+  gap:10px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.question{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:10px;
+}
+.question p{
+  color:hsl(292, 42%, 14%);
+  font-weight: 600;
+}
+.question button{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+}
+
+button img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.answer{
+  margin-bottom: 10px;
+  color:hsl(292, 16%, 49%);
+  font-weight: 400;
+}
+
+.activeButton{
+  content: url(/assets/images/icon-minus.svg);
+  object-fit: cover;
+
+}
+
+.top p{
+  font-size: 1.6rem;
+  font-weight: 700;
+  color:hsl(292, 42%, 14%);
+}
+.answer{
+  display: none;
+}
+
+.active{
+  display: block;
+}
+hr{
+  border:1px solid hsl(275, 100%, 97%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width:480px) {
+  body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/images/background-pattern-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 16px;
+  }
+  .main-container{
+    width:500px;
+    padding:30px;
+  }
+
+  
+}
+
+@media (max-width:480px) {
+  body{
+    height: 100dvh;
+    background-image: url(/assets/images/background-pattern-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .main-container{
+    width:90%;
+    margin-top: 190px;
+  }
+  
+}
