@@ -62,7 +62,7 @@ button img{
 }
 
 .activeButton{
-  content: url(/assets/images/icon-minus.svg);
+  content: url(icon-minus.svg);
   object-fit: cover;
 
 }
@@ -91,7 +91,7 @@ hr{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/images/background-pattern-desktop.svg);
+    background-image: url(background-pattern-desktop.svg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -108,7 +108,7 @@ hr{
 @media (max-width:480px) {
   body{
     height: 100dvh;
-    background-image: url(/assets/images/background-pattern-mobile.svg);
+    background-image: url(background-pattern-mobile.svg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
